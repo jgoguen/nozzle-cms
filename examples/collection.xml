@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection>
+	<book>
+		<title>Pro PHP</title>
+		<author>Kevin McArthur </author>
+		<isbn>1590598199</isbn>
+	</book>
+	<book>
+		<title>Practical Web 2.0 Applications with PHP</title>
+		<author>Quentin Zervaas</author>
+		<isbn>1590599063</isbn>
+	</book>
+	<book>
+		<title>Extending and Embedding PHP</title>
+		<author>Sara Golman</author>
+		<isbn>978-0672327049</isbn>
+	</book>
+</collection>
