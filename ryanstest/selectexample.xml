@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<nozzle-component>
+		<nozzle-component-id>buttoncomponenttest1</nozzle-component-id>
+		<nozzle-component-type>button</nozzle-component-type>
+		<nozzle-component-text>Test Button 1</nozzle-component-text>
+	</nozzle-component>
+	<nozzle-component>
+		<nozzle-component-id>selectcomponenttest</nozzle-component-id>
+		<nozzle-component-type>select</nozzle-component-type>
+		<option>
+			<value>1</value>
+			<text>Test 1</text>
+		</option>
+		<option>
+			<value>2</value>
+			<text>Test 2</text>
+		</option>
+		<option>
+			<value>3</value>
+			<text>Test 3</text>
+		</option>
+	</nozzle-component>
+	<nozzle-component>
+		<nozzle-component-id>buttoncomponenttest2</nozzle-component-id>
+		<nozzle-component-type>button</nozzle-component-type>
+		<nozzle-component-text>Test Button 2</nozzle-component-text>
+	</nozzle-component>
+</page>
