@@ -1,18 +1,30 @@
 <?php
 set_include_path(get_include_path() . PATH_SEPARATOR . __DIR__ . "/classes" . PATH_SEPARATOR . __DIR__ . "/libs" . PATH_SEPARATOR . __DIR__ . "/phpseclib");
 
+require_once("Smarty.class.php");
+
 $dbname = __DIR__ . "/nozzle.sqlite";
 $dbuser = 'nozzle';
 $dbhost = 'localhost';
 $dbpass = 'password';
 $dbtype = 'sqlite';		// Any valid PDO database type. Set to 'uri' to connect to an ODBC instance using driver invocation, or 'pdoalias' to connect using a PDO alias.
 
+$usecdn = true; // Use a CDN to load resources
+
 $templatedir = __DIR__ . "/templates";
 $xsldir = $templatedir . "/xsl";
 $xmldir = $templatedir . "/xml";
 
+
+// In general, it should not be necessary to edit below here
 $doc = new DOMDocument();
 $xsl = new XSLTProcessor();
+
+$smarty = new Smarty();
+$smarty->assign(array(
+	"templatedir" => $templatedir,
+	"usecdn" => $usecdn
+));
 
 if($dbtype && $dbname) {
 	try {
