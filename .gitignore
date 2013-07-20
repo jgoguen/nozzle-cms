@@ -3,3 +3,4 @@
 /.private/config.php
 /.private/*.sqlite
 /.private/*.db
+*templates_c
