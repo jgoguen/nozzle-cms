@@ -3,6 +3,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
+		<link rel="stylesheet" type="text/css" href="{if !$usecdn}{if $adminpage}../{/if}js/jquery-ui.css{else}//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/css/base/jquery.ui.all.css{/if}" />
 		<link rel="stylesheet" type="text/css" href="{if $adminpage}../{/if}css/nozzle.css" />
 		{block name="css"}{/block}
 
